@@ -3,8 +3,11 @@
   </button>
   <button class="float-right btn btn-outline-warning">Logout
   </button>
-  <h1>Shared Todo List</h1>
+  <h1>{{todo.title}}</h1>
   <div class="alert alert-info">
+    <input [(ngModel)]="todo.title">
+    <button [disabled]="!isAdmin">Tout détruire</button>
+    <button (click)="isAdmin = true">Devenir admin</button>
     Bienvenue sur notre application de tâches et d'idées
   </div>
 </header>
