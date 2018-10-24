@@ -6,12 +6,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TitreComponent } from './titre/titre.component';
 import { MenuComponent } from './menu/menu.component';
 import {FormsModule} from '@angular/forms';
+import { TodosListComponent } from './todos-list/todos-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitreComponent,
-    MenuComponent
+    MenuComponent,
+    TodosListComponent
   ],
   imports: [
     BrowserModule,
